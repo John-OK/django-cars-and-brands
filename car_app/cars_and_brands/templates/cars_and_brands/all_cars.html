@@ -1,0 +1,13 @@
+{% load static %}
+<h1>Cars:</h1>
+<ul>
+{% for car in cars %}
+    
+        <li>
+            <a href="#">
+            {{car.year}} {{car.brand.make}} {{car.model}}
+            </a>
+        </li>
+    
+{% endfor %}
+</ul>

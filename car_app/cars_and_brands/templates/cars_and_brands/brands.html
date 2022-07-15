@@ -1,0 +1,17 @@
+{% load static %}
+<h1>Brands:</h1>
+<ul>
+{% for brand in brands %}
+    
+        <li>
+            <a href="#">
+            {{brand.make}}
+            </a>
+        </li>
+    
+{% endfor %}
+<br>
+<li>
+    <a href="{% url 'car-list-all' %}">All Cars</a>
+</li>
+</ul>
