@@ -1,12 +1,10 @@
 {% load static %}
-<h1>Brands:</h1>
+<h1>{{brand_info}}</h1>
 <ul>
-{% for brand in brands %}
+{% for key in brand_info.keys %}
     
         <li>
-            <a href="{{brand.id}}">
-            {{brand.make}}
-            </a>
+            {{key}}
         </li>
     
 {% endfor %}
